@@ -1,0 +1,37 @@
+/*
+	Variables
+  
+	The Odin Project hasn’t mentioned this yet,  
+  but I decided to use it anyway.
+*/
+:root {
+  --bg-hero: #1F2937;
+  --bg-action: #3882F6;
+  --bg-main: white;
+  
+  --color-light: #F9FAF8;
+  --color-light-2: #E5E7EB;
+  --color-dark: #1F2937;
+
+  --hero-main: 48px;
+  --hero-logo: 24px;
+  --hero-secondary: 18px;
+  --big: 36px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header,
+.footer {
+  flex-grow: 0;
+}
+
+.main {
+  flex-grow: 1;
+}
