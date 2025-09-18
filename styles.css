@@ -129,6 +129,26 @@ body {
   padding: 0 1px;
 }
 
+.quote-block > .container {
+  flex-direction: column;
+  gap: 1em;
+  max-width: 824px;
+  padding: 4em 1em;
+}
+
+.quote {
+  align-self: center;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote-block span {
+  align-self: flex-end;
+  margin-right: 2em;
+  font-size: 18px;
+}
+
 h1, h2 {
   margin: 0;
   padding: 0;
