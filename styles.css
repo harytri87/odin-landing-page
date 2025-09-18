@@ -139,14 +139,39 @@ body {
 .quote {
   align-self: center;
   margin: 0;
-  font-weight: 300;
   font-style: italic;
 }
 
 .quote-block span {
   align-self: flex-end;
   margin-right: 2em;
-  font-size: 18px;
+}
+
+.call-to-action {
+  padding: 4em 0;
+}
+
+.call-to-action > .container {
+  justify-content: space-around;
+  align-items: center;
+  gap: 3em;
+  max-width: calc(1280px - 2em);
+  padding: 2em 1em;
+  background-color: var(--bg-action);
+}
+
+.call-to-action .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action .right button {
+  border: 2px solid var(--color-light);
+}
+
+.footer {
+  padding: 1.5em;
+  margin-top: 2em;
 }
 
 h1, h2 {
@@ -171,8 +196,11 @@ h1, h2 {
 }
 
 .text-secondary {
-  font-size: 18px;
   color: var(--color-light-2);
+}
+
+.text-n {
+  font-size: 18px;
 }
 
 .text-center {
@@ -181,6 +209,10 @@ h1, h2 {
 
 .text-big {
   font-size: 36px;
+}
+
+.text-thin {
+  font-weight: 300;
 }
 
 button {
