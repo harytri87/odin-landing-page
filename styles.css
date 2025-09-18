@@ -1,6 +1,6 @@
 /*
 	Variables
-  
+
 	The Odin Project hasn’t mentioned this yet,  
   but I decided to use it anyway.
 */
@@ -12,11 +12,10 @@
   --color-light: #F9FAF8;
   --color-light-2: #E5E7EB;
   --color-dark: #1F2937;
+}
 
-  --hero-main: 48px;
-  --hero-logo: 24px;
-  --hero-secondary: 18px;
-  --big: 36px;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -27,6 +26,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
 .header,
 .footer {
   flex-grow: 0;
@@ -34,4 +40,102 @@ body {
 
 .main {
   flex-grow: 1;
+}
+
+.header,
+.hero,
+.footer {
+  background-color: var(--bg-hero);
+}
+
+.header > .container,
+.hero > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.hero > .container {
+  gap: 2em;
+  padding: 3em 1em;
+}
+
+.hero .left,
+.hero .right {
+  flex-basis: 640px;
+}
+
+.hero .left {
+  flex-shrink: 1;
+}
+
+.hero .right {
+  flex-shrink: 0;
+}
+
+.hero-image {
+  height: 320px;
+  background-color: var(--color-light-2);
+  text-align: center;
+  align-content: center;
+}
+
+.information,
+.call-to-action {
+  background-color: var(--bg-main);
+}
+
+.quote-block {
+  background-color: var(--color-light-2);
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.bold-text {
+  font-weight: 900;
+}
+
+.light-text {
+  color: var(--color-light);
+}
+
+.dark-text {
+  color: var(--color-dark);
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: var(--color-light-2);
+}
+
+button {
+  background-color: var(--bg-action);
+  padding: 0.6em 2em;
+  border: none;
+  font-weight: bold;
+}
+
+.rounded {
+  border-radius: 0.5em;
 }
