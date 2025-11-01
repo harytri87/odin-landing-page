@@ -54,10 +54,10 @@ body {
 .header > .container,
 .hero > .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .header-logo {
@@ -77,24 +77,22 @@ body {
 }
 
 .hero > .container {
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 2em;
   padding: 3em 1em;
 }
 
 .hero .left {
-  flex: 1;
+  flex: 1 1 288px;
   max-width: 576px;
 }
 
 .hero .right {
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-basis: 576px;
 }
 
 .hero-image {
-  height: 288px;
+  aspect-ratio: 16 / 9;
   background-color: var(--color-light-2);
   text-align: center;
   align-content: center;
@@ -233,3 +231,7 @@ button {
 .big-rounded {
   border-radius: 1em;
 }
+
+/* nanti butuh media query buat di ukuran 768 ke bawah, .hero > .container harus justify center */
+/* atau 928 atau 942 kalo sesuai penggaris di dev tools pas ngecilin pelan2 */
+/* Tunggu pas dikasih tau The Odin Projectnya aja biar ngikutin alurnya */
